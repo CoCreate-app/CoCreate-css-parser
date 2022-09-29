@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.0.3...v1.0.4) (2022-09-29)
+
+
+### Bug Fixes
+
+* config renameed to CoCreateConfig ([25c9442](https://github.com/CoCreate-app/CoCreate-css-parser/commit/25c9442d089de8331e218b3ebbeac7904d6bac54))
+
 ## [1.0.3](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.0.2...v1.0.3) (2022-09-22)
 
 
