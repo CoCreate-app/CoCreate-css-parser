@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.0.4...v1.0.5) (2022-09-30)
+
+
+### Bug Fixes
+
+* bump dependencies ([333a21a](https://github.com/CoCreate-app/CoCreate-css-parser/commit/333a21a1f94ba0cc36d21a93e12fe5091307c689))
+
 ## [1.0.4](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.0.3...v1.0.4) (2022-09-29)
 
 
