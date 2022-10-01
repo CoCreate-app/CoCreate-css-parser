@@ -298,5 +298,5 @@
  
  init();
  
- export {initElements};
+ export default {initElements};
  
