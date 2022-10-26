@@ -5,8 +5,14 @@
  * SPDX-License-Identifier: MIT
  ********************************************************************************/
  import observer from '@cocreate/observer';
- import crud from '@cocreate/crud-client';
+ import CRUD from '@cocreate/crud-client';
  
+ let crud
+if(CRUD && CRUD.default)
+	crud = CRUD.default
+else
+	crud = CRUD
+
  const themes = ["light", "dark"];
  const mediaRangeNames = ["xs", "sm", "md", "lg", "xl"];
  const ranges = {
