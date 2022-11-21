@@ -1,3 +1,11 @@
+## [1.0.12](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.0.11...v1.0.12) (2022-11-21)
+
+
+### Bug Fixes
+
+* if linkTag parse css ([8f5e368](https://github.com/CoCreate-app/CoCreate-css-parser/commit/8f5e36821c0d18fba948d2c2e4ed0f8ae6462fe8))
+* update crud functions to receive an array of objects as the response ([6edb672](https://github.com/CoCreate-app/CoCreate-css-parser/commit/6edb672978200a146b1cad8e3a697ba91fdbf0ab))
+
 ## [1.0.11](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.0.10...v1.0.11) (2022-10-02)
 
 
