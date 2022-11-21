@@ -1,3 +1,10 @@
+## [1.0.15](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.0.14...v1.0.15) (2022-11-21)
+
+
+### Bug Fixes
+
+* replaced document_id with document._id ([876684f](https://github.com/CoCreate-app/CoCreate-css-parser/commit/876684f2a2d74f3a4bdd7a1dfaa30b37cd61b39e))
+
 ## [1.0.14](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.0.13...v1.0.14) (2022-11-21)
 
 
