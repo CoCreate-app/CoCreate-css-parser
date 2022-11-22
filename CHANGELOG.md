@@ -1,3 +1,11 @@
+## [1.0.17](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.0.16...v1.0.17) (2022-11-22)
+
+
+### Bug Fixes
+
+* apply src: {{source}} to CoCreate.config ([a2b9951](https://github.com/CoCreate-app/CoCreate-css-parser/commit/a2b99514f79a9b15e7677624a7b0c1b8090e0bb6))
+* workflow docs ([43ff1d3](https://github.com/CoCreate-app/CoCreate-css-parser/commit/43ff1d35df091a379c3c0da3933a002ff7547396))
+
 ## [1.0.16](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.0.15...v1.0.16) (2022-11-21)
 
 
