@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.0.17...v1.1.0) (2022-11-23)
+
+
+### Features
+
+* link tag styles will only save if a document_id is defined ([e8083c3](https://github.com/CoCreate-app/CoCreate-css-parser/commit/e8083c320e835e79bd26deaccce9fbb4fd2f20ca))
+
 ## [1.0.17](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.0.16...v1.0.17) (2022-11-22)
 
 
