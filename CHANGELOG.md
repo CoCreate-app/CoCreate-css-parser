@@ -1,3 +1,11 @@
+## [1.1.3](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.1.2...v1.1.3) (2022-11-25)
+
+
+### Bug Fixes
+
+* bump dependencies ([200c48c](https://github.com/CoCreate-app/CoCreate-css-parser/commit/200c48cd2653fcb8606e79466bf5c849ef1ed97b))
+* CoCreate.crud.default removed bug causing default object ([2dec74d](https://github.com/CoCreate-app/CoCreate-css-parser/commit/2dec74d6785141b7c151644a0b935f14a4462666))
+
 ## [1.1.2](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.1.1...v1.1.2) (2022-11-24)
 
 
