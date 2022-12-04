@@ -26,12 +26,12 @@ let linkCSS = [];
 let themeCSS = { dark: [], light: [] };
 let styleElSheet;
 
-let linkTag = document.querySelector('link[collection][document_id][name]:not([save="false"])');
+let linkTag = document.querySelector('link[parse], link[collection][document_id][name]');
+// let linkTag = document.querySelector('link[collection][document_id][name]:not([save="false"])');
 
 function init() {
-    let parse;
     if (linkTag) {
-        parse = linkTag.getAttribute('parse');
+        let parse = linkTag.getAttribute('parse');
     
         let styleEl = document.createElement("style");
         styleEl.setAttribute('component', 'CoCreateCss');
@@ -40,7 +40,7 @@ function init() {
         
         parseLinkCSS();
 
-        if (parse != false) {
+        if (parse != 'false') {
             let elements = document.querySelectorAll("[class]");
             initElements(elements);
         }
@@ -264,7 +264,7 @@ function addNewRules() {
 }
 
 function save() {
-    if (linkTag && linkTag.hasAttribute('document_id')) { 
+    if (linkTag && linkTag.hasAttribute('document_id') && linkTag.getAttribute(save) != 'false') { 
         const onlyUnique = (value, index, self) => {
             return self.indexOf(value) === index;
         };
