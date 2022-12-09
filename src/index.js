@@ -37,15 +37,17 @@ function init() {
         styleEl.setAttribute('component', 'CoCreateCss');
         document.head.appendChild(styleEl);
         styleElSheet = styleEl.sheet;
-        
-        parseLinkCSS();
 
+        if (parse == undefined)
+            parse = window.localStorage.getItem('cssParser')
+        
         if (parse != 'false') {
+            parseLinkCSS();
             let elements = document.querySelectorAll("[class]");
             initElements(elements);
+            observerInit();
         }
 
-        observerInit();
     }
  }
  
