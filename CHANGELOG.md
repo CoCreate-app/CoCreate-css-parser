@@ -1,3 +1,10 @@
+## [1.1.13](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.1.12...v1.1.13) (2022-12-09)
+
+
+### Bug Fixes
+
+* typo getAttribute save was not a string ([811913e](https://github.com/CoCreate-app/CoCreate-css-parser/commit/811913e4ff22501c00f809e559e6946a1728ca71))
+
 ## [1.1.12](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.1.11...v1.1.12) (2022-12-08)
 
 
