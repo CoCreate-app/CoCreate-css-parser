@@ -264,7 +264,7 @@ function addNewRules() {
 }
 
 function save() {
-    if (linkTag && linkTag.hasAttribute('document_id') && linkTag.getAttribute(save) != 'false') { 
+    if (linkTag && linkTag.hasAttribute('document_id') && linkTag.getAttribute('save') != 'false') { 
         const onlyUnique = (value, index, self) => {
             return self.indexOf(value) === index;
         };
