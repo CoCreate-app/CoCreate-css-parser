@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.1.13...v1.2.0) (2022-12-09)
+
+
+### Features
+
+* set cssParser true or false from localStorage ([3270345](https://github.com/CoCreate-app/CoCreate-css-parser/commit/3270345dbc6731c53bda766734c57a4281f05c49))
+
 ## [1.1.13](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.1.12...v1.1.13) (2022-12-09)
 
 
