@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.2.5...v1.3.0) (2022-12-14)
+
+
+### Features
+
+* oberver link tag for changes and react accordingly ([4f0112e](https://github.com/CoCreate-app/CoCreate-css-parser/commit/4f0112e63e78a8360c934e90e53a36ca1aaeed20))
+
 ## [1.2.5](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.2.4...v1.2.5) (2022-12-13)
 
 
