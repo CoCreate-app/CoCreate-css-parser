@@ -25,13 +25,14 @@ let parsedCSS = [];
 let linkCSS = [];
 let themeCSS = { dark: [], light: [] };
 let styleElSheet;
+let parse;
 
 let linkTag = document.querySelector('link[parse], link[collection][document_id][name]');
 // let linkTag = document.querySelector('link[collection][document_id][name]:not([save="false"])');
 
-function init() {
+function init(linkTag) {
     if (linkTag) {
-        let parse = linkTag.getAttribute('parse');
+        parse = linkTag.getAttribute('parse');
     
         let styleEl = document.createElement("style");
         styleEl.setAttribute('component', 'CoCreateCss');
@@ -283,7 +284,8 @@ const observerInit = () => {
         observe: ['childList'],
         target: '[class]',
         callback: mutation => {
-            initElements(mutation.addedNodes);
+            if (parse != 'false')
+                initElements(mutation.addedNodes);
         }
     });
     
@@ -292,11 +294,31 @@ const observerInit = () => {
         observe: ["attributes"],
         attributeName: ["class", "className"],
         callback: mutation => {
-            initElements([mutation.target]);        
+            if (parse != 'false')
+                initElements([mutation.target]);        
         }
     });
 };
- 
+
+observer.init({
+    name: "cssParseAddedNode",
+	observe: ['addedNodes'],
+    target: 'link[parse], link[save], link[document_id]',
+    callback: mutation => {
+        init(mutation.target);
+    }
+});
+
+observer.init({
+    name: "cssParseattributes",
+    observe: ["attributes"],
+    attributeName: ["parse", "save", "document_id"],
+    target: 'link',
+    callback: mutation => {
+        init(mutation.target);        
+    }
+});
+
 init();
 
 export default {initElements};
