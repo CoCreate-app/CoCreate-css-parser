@@ -27,9 +27,6 @@ let themeCSS = { dark: [], light: [] };
 let styleElSheet;
 let parse;
 
-let linkTag = document.querySelector('link[parse], link[collection][document_id][name]');
-// let linkTag = document.querySelector('link[collection][document_id][name]:not([save="false"])');
-
 function init(linkTag) {
     if (linkTag) {
         parse = linkTag.getAttribute('parse');
@@ -319,7 +316,9 @@ observer.init({
     }
 });
 
-init();
+let linkTag = document.querySelector('link[parse], link[collection][document_id][name]');
+if (linkTag)
+    init(linkTag);
 
 export default {initElements};
  
