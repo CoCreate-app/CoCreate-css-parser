@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.3.1...v1.3.2) (2022-12-15)
+
+
+### Bug Fixes
+
+* add missing dev dependency style-loader ([3be1e23](https://github.com/CoCreate-app/CoCreate-css-parser/commit/3be1e23fccf00f85eda339881d8441041a71abc6))
+
 ## [1.3.1](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.3.0...v1.3.1) (2022-12-14)
 
 
