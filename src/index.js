@@ -32,7 +32,7 @@ function init(linkTag) {
         parse = linkTag.getAttribute('parse');
     
         let styleEl = document.createElement("style");
-        styleEl.setAttribute('component', 'CoCreateCss');
+        styleEl.setAttribute('component', 'css-parser');
         document.head.appendChild(styleEl);
         styleElSheet = styleEl.sheet;
 
