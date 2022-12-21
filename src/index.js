@@ -39,7 +39,7 @@ function init(linkTag) {
         if (parse == undefined)
             parse = window.localStorage.getItem('cssParser')
         
-        if (parse != 'false') {
+        if (parse == 'true') {
             parseLinkCSS();
             let elements = document.querySelectorAll("[class]");
             initElements(elements);
