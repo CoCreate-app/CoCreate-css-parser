@@ -263,14 +263,18 @@ function addNewRules() {
     tempStyleList = [];
 }
 
+let delayTimer;
 function save() {
-    if (linkTag && linkTag.hasAttribute('document_id') && linkTag.getAttribute('save') != 'false') { 
-        const onlyUnique = (value, index, self) => {
-            return self.indexOf(value) === index;
-        };
-
-        let css = parsedCSS.concat(linkCSS).filter(onlyUnique);
-        crud.save(linkTag, css.join('\r\n'));
+    if (linkTag && linkTag.hasAttribute('document_id') && linkTag.getAttribute('save') != 'false') {
+        clearTimeout(delayTimer);
+        delayTimer = setTimeout(function() {
+            const onlyUnique = (value, index, self) => {
+                return self.indexOf(value) === index;
+            };
+    
+            let css = parsedCSS.concat(linkCSS).filter(onlyUnique);
+            crud.save(linkTag, css.join('\r\n'));
+        }, 3000);
     }
 }
  
