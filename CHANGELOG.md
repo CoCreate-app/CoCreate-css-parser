@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.4.0...v1.4.1) (2022-12-30)
+
+
+### Bug Fixes
+
+* update config sources to use template  braces with entry on src ([e45b99d](https://github.com/CoCreate-app/CoCreate-css-parser/commit/e45b99d2c5b68258a91339ccb408740f1747847c))
+
 # [1.4.0](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.3.9...v1.4.0) (2022-12-29)
 
 
