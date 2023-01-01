@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.4.2...v1.4.3) (2023-01-01)
+
+
+### Bug Fixes
+
+* docs sanbox overflow ([9b74b92](https://github.com/CoCreate-app/CoCreate-css-parser/commit/9b74b9281fae6289bf0100d2cbd34df916955a8f))
+
 ## [1.4.2](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.4.1...v1.4.2) (2022-12-31)
 
 
