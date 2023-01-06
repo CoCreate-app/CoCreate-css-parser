@@ -1,3 +1,11 @@
+## [1.4.5](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.4.4...v1.4.5) (2023-01-06)
+
+
+### Bug Fixes
+
+* bump dependencies, worklow [@v3](https://github.com/v3) ([aa5adf1](https://github.com/CoCreate-app/CoCreate-css-parser/commit/aa5adf1f7049a99819d2b90bbc75d666876f3ba1))
+* edit in github btn styles ([e9850ad](https://github.com/CoCreate-app/CoCreate-css-parser/commit/e9850ad39a5e78bb5ff05ebe49215764ef431a2a))
+
 ## [1.4.4](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.4.3...v1.4.4) (2023-01-05)
 
 
