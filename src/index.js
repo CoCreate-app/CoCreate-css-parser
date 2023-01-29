@@ -6,6 +6,7 @@
  ********************************************************************************/
 import observer from '@cocreate/observer';
 import crud from '@cocreate/crud-client';
+import localStorage from '@cocreate/local-storage';
 
 const themes = ["light", "dark"];
 const mediaRangeNames = ["xs", "sm", "md", "lg", "xl"];
@@ -37,7 +38,7 @@ function init(linkTag) {
         styleElSheet = styleEl.sheet;
 
         if (parse == undefined)
-            parse = window.localStorage.getItem('cssParser')
+            parse = localStorage.getItem('cssParser')
         
         if (parse == 'true') {
             parseLinkCSS();
