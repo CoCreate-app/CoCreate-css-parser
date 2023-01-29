@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.4.9...v1.5.0) (2023-01-29)
+
+
+### Features
+
+* import @cocreate/local-storage ([e71b717](https://github.com/CoCreate-app/CoCreate-css-parser/commit/e71b71755f028c4073316dc5822e351d12cefa06))
+
 ## [1.4.9](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.4.8...v1.4.9) (2023-01-27)
 
 
