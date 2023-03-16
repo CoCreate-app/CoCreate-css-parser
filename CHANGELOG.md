@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.5.5...v1.6.0) (2023-03-16)
+
+
+### Features
+
+* replaced get-value and set-value with a super charged version of CoCreate-events ([db8293f](https://github.com/CoCreate-app/CoCreate-css-parser/commit/db8293f47770f39830585cef540ecb4a597c71ba))
+
 ## [1.5.5](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.5.4...v1.5.5) (2023-02-01)
 
 
