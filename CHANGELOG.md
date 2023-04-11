@@ -1,3 +1,10 @@
+## [1.6.4](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.6.3...v1.6.4) (2023-04-11)
+
+
+### Bug Fixes
+
+* renamed domains to hosts ([048c7f4](https://github.com/CoCreate-app/CoCreate-css-parser/commit/048c7f4f80a372e1c1ec52cf229ad83b5ea1b856))
+
 ## [1.6.3](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.6.2...v1.6.3) (2023-03-30)
 
 
