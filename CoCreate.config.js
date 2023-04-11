@@ -12,7 +12,7 @@ module.exports = {
                 "name": "index.html",
                 "path": "/docs/css-parser/index.html",
                 "src": "{{./docs/index.html}}",
-                "domains": [
+                "hosts": [
                     "cocreate.app",
                     "general.cocreate.app"
                 ],
