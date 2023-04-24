@@ -1,3 +1,10 @@
+## [1.7.4](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.3...v1.7.4) (2023-04-24)
+
+
+### Bug Fixes
+
+* updated worrkflows to v3 and node version 16 ([f34b788](https://github.com/CoCreate-app/CoCreate-css-parser/commit/f34b7885405c3e54791876db470430087020dce1))
+
 ## [1.7.3](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.2...v1.7.3) (2023-04-24)
 
 
