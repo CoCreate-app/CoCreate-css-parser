@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.0...v1.7.1) (2023-04-24)
+
+
+### Bug Fixes
+
+* removed uglifyjs-webpack-plugin ([3227b95](https://github.com/CoCreate-app/CoCreate-css-parser/commit/3227b95fb788f26c91c41112323e93b71f4ac220))
+
 # [1.7.0](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.6.6...v1.7.0) (2023-04-24)
 
 
