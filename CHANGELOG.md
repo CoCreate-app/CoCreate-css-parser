@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.6.6...v1.7.0) (2023-04-24)
+
+
+### Features
+
+* added pwa manifest ([5ab1f00](https://github.com/CoCreate-app/CoCreate-css-parser/commit/5ab1f00cb32264970b8ce81494fbc0db728e9e88))
+
 ## [1.6.6](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.6.5...v1.6.6) (2023-04-11)
 
 
