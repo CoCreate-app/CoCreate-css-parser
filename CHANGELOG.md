@@ -1,3 +1,12 @@
+## [1.7.5](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.4...v1.7.5) (2023-04-30)
+
+
+### Bug Fixes
+
+* fullscreen target updated to fullscreen fullscreen-target ([23b03f1](https://github.com/CoCreate-app/CoCreate-css-parser/commit/23b03f1a55922279e771437d93f4740b53d4c8de))
+* package-lock.json and pnpm-lock.yaml added to .gitignore ([a7d8865](https://github.com/CoCreate-app/CoCreate-css-parser/commit/a7d8865dbd603fd04b34424ad3396735ecd137ea))
+* removed toogle fullscreen icons. now using css content ([71953aa](https://github.com/CoCreate-app/CoCreate-css-parser/commit/71953aa86c7d0b29d5271fab9551bb7135786c17))
+
 ## [1.7.4](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.3...v1.7.4) (2023-04-24)
 
 
