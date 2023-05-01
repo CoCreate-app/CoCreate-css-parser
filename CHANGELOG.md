@@ -1,3 +1,10 @@
+## [1.7.6](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.5...v1.7.6) (2023-05-01)
+
+
+### Bug Fixes
+
+* replace fontawesome with svg ([6cba9af](https://github.com/CoCreate-app/CoCreate-css-parser/commit/6cba9afb598c866bd6e12c4d3d06e0774d609644))
+
 ## [1.7.5](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.4...v1.7.5) (2023-04-30)
 
 
