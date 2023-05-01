@@ -1,3 +1,10 @@
+## [1.7.7](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.6...v1.7.7) (2023-05-01)
+
+
+### Bug Fixes
+
+* update manifest.json to manifest.webmanifest ([d71bfd1](https://github.com/CoCreate-app/CoCreate-css-parser/commit/d71bfd1dfc48ececc5c4111df8ea898cbada5195))
+
 ## [1.7.6](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.5...v1.7.6) (2023-05-01)
 
 
