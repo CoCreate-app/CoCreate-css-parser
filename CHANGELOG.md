@@ -1,3 +1,10 @@
+## [1.7.9](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.8...v1.7.9) (2023-05-10)
+
+
+### Bug Fixes
+
+* apikey renamed to key ([44837f9](https://github.com/CoCreate-app/CoCreate-css-parser/commit/44837f9a80cf59d92ceb846468dba179702a11c1))
+
 ## [1.7.8](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.7...v1.7.8) (2023-05-06)
 
 
