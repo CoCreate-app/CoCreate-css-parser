@@ -75,7 +75,7 @@ function parseLinkCSS() {
                     if (rule.selectorText) {
                         classNameList.set(rule.selectorText.replace(/[.\\]/g, ''), true);
                     } else {
-                        // ToDo: handle media queriesand add to classNameList to avoid duplicate parsing
+                        // TODO: handle media queriesand add to classNameList to avoid duplicate parsing
                     }
                 }
                 catch (err) {
