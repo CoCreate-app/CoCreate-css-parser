@@ -1,3 +1,10 @@
+## [1.7.10](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.9...v1.7.10) (2023-05-19)
+
+
+### Bug Fixes
+
+* update packages to latest version. This commit updates various packages in the dependencies section of the package.json file to their latest published versions, thereby fixing multiple bugs and improving overall performance. ([eb77a15](https://github.com/CoCreate-app/CoCreate-css-parser/commit/eb77a152c3b1d091c8fbe0b2e980ea35c13d0ca5))
+
 ## [1.7.9](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.8...v1.7.9) (2023-05-10)
 
 
