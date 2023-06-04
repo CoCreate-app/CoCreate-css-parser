@@ -1,3 +1,11 @@
+## [1.7.14](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.13...v1.7.14) (2023-06-04)
+
+
+### Bug Fixes
+
+* replaced secert GITHUB_TOKEN with GITHUB ([1ff3965](https://github.com/CoCreate-app/CoCreate-css-parser/commit/1ff3965d420c04486ac52979e7189630db8c7722))
+* Update dependencies versions for [@cocreate](https://github.com/cocreate) libraries ([a3ee4d0](https://github.com/CoCreate-app/CoCreate-css-parser/commit/a3ee4d013e94facaecffcf4580ca788908acf4d4))
+
 ## [1.7.13](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.12...v1.7.13) (2023-06-04)
 
 
