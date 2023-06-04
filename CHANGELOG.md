@@ -1,3 +1,10 @@
+## [1.7.15](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.14...v1.7.15) (2023-06-04)
+
+
+### Bug Fixes
+
+* Refactor CoCreate.config.js to remove hard-coded credentials ([a96f369](https://github.com/CoCreate-app/CoCreate-css-parser/commit/a96f369e94d031dd78f5724ddb143a142601e122))
+
 ## [1.7.14](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.13...v1.7.14) (2023-06-04)
 
 
