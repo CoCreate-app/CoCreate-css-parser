@@ -1,3 +1,10 @@
+## [1.7.13](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.12...v1.7.13) (2023-06-04)
+
+
+### Bug Fixes
+
+* **semantic-release:** worklow error solved by running node version 14 ([5d887e8](https://github.com/CoCreate-app/CoCreate-css-parser/commit/5d887e89191e51866c035d3e75c3e80d7e4f2be0))
+
 ## [1.7.12](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.11...v1.7.12) (2023-06-02)
 
 
