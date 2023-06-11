@@ -1,3 +1,10 @@
+## [1.7.26](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.25...v1.7.26) (2023-06-11)
+
+
+### Bug Fixes
+
+* testing workflow ([2afb53e](https://github.com/CoCreate-app/CoCreate-css-parser/commit/2afb53ee348744cf59ca595578c12642c248e093))
+
 ## [1.7.25](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.24...v1.7.25) (2023-06-11)
 
 
