@@ -1,3 +1,10 @@
+## [1.7.21](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.20...v1.7.21) (2023-06-11)
+
+
+### Bug Fixes
+
+* postintall error ([5f8aadf](https://github.com/CoCreate-app/CoCreate-css-parser/commit/5f8aadf2bd2d9065374e19f58d6a94b00b5c4227))
+
 ## [1.7.20](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.19...v1.7.20) (2023-06-11)
 
 
