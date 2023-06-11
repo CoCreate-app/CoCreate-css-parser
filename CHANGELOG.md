@@ -1,3 +1,10 @@
+## [1.7.18](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.17...v1.7.18) (2023-06-11)
+
+
+### Bug Fixes
+
+* renamed hosts to host. the value can be a string or an array of strings ([a647c92](https://github.com/CoCreate-app/CoCreate-css-parser/commit/a647c92f1ad530b497731ff045d8e4ce31fea44e))
+
 ## [1.7.17](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.16...v1.7.17) (2023-06-10)
 
 
