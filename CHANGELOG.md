@@ -1,3 +1,10 @@
+## [1.7.27](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.26...v1.7.27) (2023-06-11)
+
+
+### Bug Fixes
+
+* Update dependencies versions for [@cocreate](https://github.com/cocreate) libraries ([7f3e1e1](https://github.com/CoCreate-app/CoCreate-css-parser/commit/7f3e1e19a3af935b5961fb739abfd03583feb518))
+
 ## [1.7.26](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.25...v1.7.26) (2023-06-11)
 
 
