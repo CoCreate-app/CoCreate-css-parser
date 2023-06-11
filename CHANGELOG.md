@@ -1,3 +1,10 @@
+## [1.7.20](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.19...v1.7.20) (2023-06-11)
+
+
+### Bug Fixes
+
+* @cocreate/cli moved to dependencies ([12a6e48](https://github.com/CoCreate-app/CoCreate-css-parser/commit/12a6e487eaa1ca5bd6981682c19f38b999170853))
+
 ## [1.7.19](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.18...v1.7.19) (2023-06-11)
 
 
