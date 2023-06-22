@@ -1,37 +1,64 @@
 <!DOCTYPE html>
 <html lang="en" theme="dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>CoCreateCSS - A utility first, atomic CSS framework</title>
+        <meta
+            name="description"
+            content="A Low-code JavaScript framework for building collaborative No-code platforms, apps and UI" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="https://cocreate.app/images/favicon.ico" />
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>CoCreateCSS - A utility first, atomic CSS framework</title>
-	<meta name="description" content="A Low-code JavaScript framework for building collaborative No-code platforms, apps and UI">
-	<link rel="icon" type="image/png" sizes="32x32" href="https://cocreate.app/images/favicon.ico">
+        <!-- CoCreate CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.cocreate.app/latest/CoCreate.min.css"
+            type="text/css" />
+        <!--<link rel="stylesheet" href="https://ws.cocreate.app/docs/index.css" type="text/css" save="true" collection="files" document_id="60888216117c640e7596303f" name="src" />-->
+        <link
+            rel="stylesheet"
+            href="../src/index.css"
+            collection="files"
+            document_id="60888216117c640e7596303f"
+            name="src"
+            type="text/css"
+            parse="true"
+            save="true" />
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
 
-	<!-- CoCreate CSS -->
-	<link rel="stylesheet" href="https://cdn.cocreate.app/latest/CoCreate.min.css" type="text/css" />
-	<!--<link rel="stylesheet" href="https://ws.cocreate.app/docs/index.css" type="text/css" save="true" collection="files" document_id="60888216117c640e7596303f" name="src" />-->
-	<link rel="stylesheet" href="../src/index.css" collection="files" document_id="60888216117c640e7596303f" name="src" type="text/css" parse="true" save="true" />
-    <link rel="manifest" href="/manifest.webmanifest">
-</head>
-
-<body class="padding:50px!important">
-    <div class="width:50%@300px-500px" parse="false">
-        <div class="background:blue@dark:hover">
-            <h1 class="color:white@dark">hello how are you</h1>
-            <div>
-                <div class="background:black@dark background:blue@light">
-                    <h1 class="color:white@dark color:yellow@light">hello how are you</h1>
+    <body class="padding:50px!important">
+        <div class="width:50%@300px-500px" parse="false">
+            <div class="background:blue@dark:hover">
+                <h1 class="color:white@dark">hello how are you</h1>
+                <div>
+                    <div class="background:black@dark background:blue@light">
+                        <h1 class="color:white@dark color:yellow@light">
+                            hello how are you
+                        </h1>
+                    </div>
+                    <a
+                        toggle="dark, light"
+                        toggle-selector="[theme]"
+                        toggle-attribute="theme"
+                        >Toggle Darkmode</a
+                    >
                 </div>
-                <a toggle="dark, light" toggle-target="[theme]" toggle-attribute="theme">Toggle Darkmode</a>
             </div>
+            <a
+                toggle="dark, light"
+                toggle-selector="[theme]"
+                toggle-attribute="theme"
+                >Toggle Darkmode</a
+            >
         </div>
-        <a toggle="dark, light" toggle-target="[theme]" toggle-attribute="theme">Toggle Darkmode</a>
-    </div>
 
-    <!--CoCreateJS-->
-     <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>  
-</body>
-
+        <!--CoCreateJS-->
+        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+    </body>
 </html>
