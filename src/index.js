@@ -31,7 +31,7 @@ let parse;
 function init(linkTag) {
     if (linkTag) {
         parse = linkTag.getAttribute('parse');
-    
+
         let styleEl = document.createElement("style");
         styleEl.setAttribute('component', 'css-parser');
         document.head.appendChild(styleEl);
@@ -39,7 +39,7 @@ function init(linkTag) {
 
         if (parse == undefined)
             parse = localStorage.getItem('cssParser')
-        
+
         if (parse == 'true') {
             parseLinkCSS();
             let elements = document.querySelectorAll("[class]");
@@ -48,10 +48,10 @@ function init(linkTag) {
         }
 
     }
- }
- 
-function initElements (elements) {
-    for(let element of elements)
+}
+
+function initElements(elements) {
+    for (let element of elements)
         initElement(element);
     addNewRules();
 }
@@ -88,9 +88,9 @@ function parseLinkCSS() {
 function parseClassList(classList) {
     for (let className of classList) {
         if (classNameList.has(className)) continue;
-    
+
         if (className.includes('@dark') || className.includes('@light')) {
-            createThemeRule(className) ;
+            createThemeRule(className);
         }
         else if (className.includes(':')) {
             if (className.includes('@')) {
@@ -117,7 +117,7 @@ function createRule(className) {
     let property = res[0];
     let suffix = parseValue(res[1]);
     let value = res[1].split("@")[0].replace(/_/g, " ");
-    
+
     let rule = "";
     if (res.length > 2) {
         for (let i = 0; i < res.length - 2; i++) {
@@ -133,17 +133,17 @@ function createRule(className) {
 
 function parseValue(value) {
     return value
-    .replace(/\./g, "\\.")
-    .replace(/%/g, "\\%")
-    .replace(/@/g, "\\@")
-    .replace(/\(/g, "\\(")
-    .replace(/\)/g, "\\)")
-    .replace(/#/g, "\\#")
-    .replace(/,/g, "\\,")
-    .replace(/!/g, "\\!")
-    .replace(/\//g, "\\/")
-    .replace(/\"/g, "\\\"")
-    .replace(/\'/g, "\\'");
+        .replace(/\./g, "\\.")
+        .replace(/%/g, "\\%")
+        .replace(/@/g, "\\@")
+        .replace(/\(/g, "\\(")
+        .replace(/\)/g, "\\)")
+        .replace(/#/g, "\\#")
+        .replace(/,/g, "\\,")
+        .replace(/!/g, "\\!")
+        .replace(/\//g, "\\/")
+        .replace(/\"/g, "\\\"")
+        .replace(/\'/g, "\\'");
 }
 
 function createMediaRule(className) {
@@ -175,14 +175,14 @@ function createThemeRule(className) {
     let classname = className;
     let pseudo, theme;
     [className, theme] = className.split('@');
-    
+
     if (theme.includes(':')) {
         theme = theme.split(':');
         pseudo = theme;
         theme = theme[0];
         pseudo.shift();
     }
-    
+
     let res = className.split(':');
     if (res.length > 2) {
         console.log('pseudo names need to be added after theme');
@@ -191,7 +191,7 @@ function createThemeRule(className) {
     let property = res[0];
     let suffix = parseValue(res[1]);
     let value = res[1].replace(/_/g, " ");
-    
+
     let rule = "";
     if (pseudo) {
         suffix += "\\@" + theme;
@@ -266,21 +266,21 @@ function addNewRules() {
 
 let delayTimer;
 function save() {
-    if (linkTag && linkTag.hasAttribute('document_id') && linkTag.getAttribute('save') != 'false') {
+    if (linkTag && linkTag.hasAttribute('object') && linkTag.getAttribute('save') != 'false') {
         clearTimeout(delayTimer);
-        delayTimer = setTimeout(function() {
+        delayTimer = setTimeout(function () {
             const onlyUnique = (value, index, self) => {
                 return self.indexOf(value) === index;
             };
-    
+
             let css = parsedCSS.concat(linkCSS).filter(onlyUnique);
             crud.save(linkTag, css.join('\r\n'));
         }, 3000);
     }
 }
- 
+
 const observerInit = () => {
-    
+
     observer.init({
         name: "ccCss",
         observe: ['childList'],
@@ -290,22 +290,22 @@ const observerInit = () => {
                 initElements(mutation.addedNodes);
         }
     });
-    
+
     observer.init({
         name: "ccCss",
         observe: ["attributes"],
         attributeName: ["class", "className"],
         callback: mutation => {
             if (parse != 'false')
-                initElements([mutation.target]);        
+                initElements([mutation.target]);
         }
     });
 };
 
 observer.init({
     name: "cssParseAddedNode",
-	observe: ['addedNodes'],
-    target: 'link[parse], link[save], link[document_id]',
+    observe: ['addedNodes'],
+    target: 'link[parse], link[save], link[object]',
     callback: mutation => {
         init(mutation.target);
     }
@@ -314,16 +314,15 @@ observer.init({
 observer.init({
     name: "cssParseattributes",
     observe: ["attributes"],
-    attributeName: ["parse", "save", "document_id"],
+    attributeName: ["parse", "save", "object"],
     target: 'link',
     callback: mutation => {
-        init(mutation.target);        
+        init(mutation.target);
     }
 });
 
-let linkTag = document.querySelector('link[parse], link[collection][document_id][name]');
+let linkTag = document.querySelector('link[parse], link[array][object][name]');
 if (linkTag)
     init(linkTag);
 
-export default {initElements};
- 
+export default { initElements };

@@ -23,8 +23,8 @@
         <link
             rel="stylesheet"
             href="/docs/index.css"
-            collection="files"
-            document_id="60888216117c640e7596303f"
+            array="files"
+            object="60888216117c640e7596303f"
             name="src"
             type="text/css"
             save="true" />
@@ -42,7 +42,7 @@
     </head>
 
     <body class="margin:15px_10px">
-        <div collection="" document_id="" name="" id="CoCreateCSS">
+        <div array="" object="" name="" id="CoCreateCSS">
             <div
                 class="display:flex flex-wrap:wrap justify-content:space-between">
                 <div class="display:flex align-items:center">
@@ -1023,8 +1023,8 @@
                                 <textarea
                                     type="code"
                                     lang="html"
-                                    collection="demos"
-                                    document_id=""
+                                    array="demos"
+                                    object=""
                                     name="demo"
                                     save="false"
                                     id="demo"
@@ -1101,11 +1101,11 @@
 
         <script src="./dist/CoCreateCSS.min.js"></script>
         <script type="text/javascript">
-            var copy = document.querySelectorAll(".copy");
+            var copy = object.querySelectorAll(".copy");
 
             for (const copied of copy) {
                 copied.onclick = function () {
-                    document.execCommand("copy");
+                    object.execCommand("copy");
                 };
                 copied.addEventListener("copy", function (event) {
                     event.preventDefault();
