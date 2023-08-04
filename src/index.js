@@ -321,7 +321,7 @@ observer.init({
     }
 });
 
-let linkTag = document.querySelector('link[parse], link[array][object][name]');
+let linkTag = document.querySelector('link[parse], link[array][object][key]');
 if (linkTag)
     init(linkTag);
 
