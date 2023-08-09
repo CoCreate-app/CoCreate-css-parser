@@ -5,7 +5,7 @@
  * SPDX-License-Identifier: MIT
  ********************************************************************************/
 import observer from '@cocreate/observer';
-import crud from '@cocreate/crud-client';
+// import crud from '@cocreate/crud-client';
 import localStorage from '@cocreate/local-storage';
 
 const themes = ["light", "dark"];
@@ -42,6 +42,12 @@ function init(linkTag) {
 
         if (parse == 'true') {
             parseLinkCSS();
+            linkTag.getValue = () => {
+                const onlyUnique = (value, index, self) => {
+                    return self.indexOf(value) === index;
+                };
+                return parsedCSS.concat(linkCSS).filter(onlyUnique)
+            }
             let elements = document.querySelectorAll("[class]");
             initElements(elements);
             observerInit();
@@ -260,7 +266,8 @@ function addNewRules() {
         parsedCSS.splice(low, 0, rule);
     }
     if (tempStyleList.length > 0)
-        save();
+        if (linkTag.save)
+            linkTag.save();
     tempStyleList = [];
 }
 
@@ -269,13 +276,14 @@ function save() {
     if (linkTag && linkTag.hasAttribute('object') && linkTag.getAttribute('save') != 'false') {
         clearTimeout(delayTimer);
         delayTimer = setTimeout(function () {
-            const onlyUnique = (value, index, self) => {
-                return self.indexOf(value) === index;
-            };
+            linkTag.save();
+            // const onlyUnique = (value, index, self) => {
+            //     return self.indexOf(value) === index;
+            // };
 
-            let css = parsedCSS.concat(linkCSS).filter(onlyUnique);
-            crud.save(linkTag, css.join('\r\n'));
-        }, 3000);
+            // let css = parsedCSS.concat(linkCSS).filter(onlyUnique);
+            // crud.save(linkTag, css.join('\r\n'));
+        }, 5000);
     }
 }
 
