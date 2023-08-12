@@ -5,7 +5,6 @@
  * SPDX-License-Identifier: MIT
  ********************************************************************************/
 import observer from '@cocreate/observer';
-// import crud from '@cocreate/crud-client';
 import localStorage from '@cocreate/local-storage';
 
 const themes = ["light", "dark"];
@@ -43,10 +42,13 @@ function init(linkTag) {
         if (parse == 'true') {
             parseLinkCSS();
             linkTag.getValue = () => {
+
                 const onlyUnique = (value, index, self) => {
                     return self.indexOf(value) === index;
                 };
-                return parsedCSS.concat(linkCSS).filter(onlyUnique)
+                // let css = parsedCSS.concat(linkCSS).filter(onlyUnique);
+                // css.join('\r\n'
+                return parsedCSS.concat(linkCSS).filter(onlyUnique).join('\r\n')
             }
             let elements = document.querySelectorAll("[class]");
             initElements(elements);
@@ -269,22 +271,6 @@ function addNewRules() {
         if (linkTag.save)
             linkTag.save();
     tempStyleList = [];
-}
-
-let delayTimer;
-function save() {
-    if (linkTag && linkTag.hasAttribute('object') && linkTag.getAttribute('save') != 'false') {
-        clearTimeout(delayTimer);
-        delayTimer = setTimeout(function () {
-            linkTag.save();
-            // const onlyUnique = (value, index, self) => {
-            //     return self.indexOf(value) === index;
-            // };
-
-            // let css = parsedCSS.concat(linkCSS).filter(onlyUnique);
-            // crud.save(linkTag, css.join('\r\n'));
-        }, 5000);
-    }
 }
 
 const observerInit = () => {
