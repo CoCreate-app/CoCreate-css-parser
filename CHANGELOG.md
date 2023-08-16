@@ -1,3 +1,20 @@
+# [1.8.0](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.29...v1.8.0) (2023-08-16)
+
+
+### Bug Fixes
+
+* crud attributes renamed ([4e317ef](https://github.com/CoCreate-app/CoCreate-css-parser/commit/4e317efe622a6a741e7f26bcc26a5f70daf969c0))
+* Remove redundant dependency ([ca37c3a](https://github.com/CoCreate-app/CoCreate-css-parser/commit/ca37c3a9b101cfde1b0f95f16ff8ec5c1a84b76c))
+* replace -target -selector ([345d8af](https://github.com/CoCreate-app/CoCreate-css-parser/commit/345d8af1b8cf67fe98ee2314f52156701991076a))
+* webpack.config and package.json make use of mode=production instead of process.env ([6382cc5](https://github.com/CoCreate-app/CoCreate-css-parser/commit/6382cc56209d43a4b35309ef1c5745baccf3e0f4))
+
+
+### Features
+
+* element.setValue and Remove unused import statement and optimize code for joining parsedCSS and linkCSS arrays into a single string with unique values. Also, remove unused code related to saving the linkTag. ([4e0affd](https://github.com/CoCreate-app/CoCreate-css-parser/commit/4e0affd917c4dfd7cab0ae619490dcc2d0fc4a78))
+* getValue function and use element.save() to execute crud save ([d2a289f](https://github.com/CoCreate-app/CoCreate-css-parser/commit/d2a289fad2c17058baa733f2068087ebd334a954))
+* name attribute and variable renamed to key ([3a130e3](https://github.com/CoCreate-app/CoCreate-css-parser/commit/3a130e38f88c23c34ba294023f66732992103d6f))
+
 ## [1.7.29](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.7.28...v1.7.29) (2023-06-14)
 
 
