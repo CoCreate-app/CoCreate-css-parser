@@ -1,3 +1,12 @@
+## [1.9.1](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.9.0...v1.9.1) (2023-08-21)
+
+
+### Bug Fixes
+
+* /dist/CoCreate.js updated to https://CoCreate.app/dist/CoCreate.js ([08cb9e5](https://github.com/CoCreate-app/CoCreate-css-parser/commit/08cb9e53ed94e67e898d9562415c5b05ec4264db))
+* replace cdn with /dist ([688b4bc](https://github.com/CoCreate-app/CoCreate-css-parser/commit/688b4bc7c89e6436f48dab5406c6f86c138daaa2))
+* update file uploader ([549af24](https://github.com/CoCreate-app/CoCreate-css-parser/commit/549af240382c6738b1b71a71fa522ec58e3654da))
+
 # [1.9.0](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.8.0...v1.9.0) (2023-08-17)
 
 
