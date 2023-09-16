@@ -4,6 +4,8 @@
  *
  * SPDX-License-Identifier: MIT
  ********************************************************************************/
+
+/** */
 import observer from '@cocreate/observer';
 import localStorage from '@cocreate/local-storage';
 
@@ -42,13 +44,21 @@ function init(linkTag) {
         if (parse == 'true') {
             parseLinkCSS();
             linkTag.getValue = () => {
-
                 const onlyUnique = (value, index, self) => {
                     return self.indexOf(value) === index;
                 };
-                // let css = parsedCSS.concat(linkCSS).filter(onlyUnique);
-                // css.join('\r\n'
-                return parsedCSS.concat(linkCSS).filter(onlyUnique).join('\r\n')
+
+                const urlObject = new URL(linkTag.href);
+                const pathParts = urlObject.pathname.split("/");
+
+                let data = {}
+                data.name = pathParts[pathParts.length - 1];
+                data.path = urlObject.pathname.replace(data.name, '');
+                data.pathname = urlObject.pathname;
+                data.src = parsedCSS.concat(linkCSS).filter(onlyUnique).join('\r\n');
+                data['content-type'] = 'text/css';
+
+                return data
             }
             let elements = document.querySelectorAll("[class]");
             initElements(elements);
