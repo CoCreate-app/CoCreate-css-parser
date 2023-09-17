@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.10.1...v1.11.0) (2023-09-17)
+
+
+### Features
+
+* save css src with name, path, pathname and content-type ([572c34e](https://github.com/CoCreate-app/CoCreate-css-parser/commit/572c34e8ebd204b901bcc02742ba7824d90ff5be))
+
 ## [1.10.1](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.10.0...v1.10.1) (2023-08-21)
 
 
