@@ -1,3 +1,11 @@
+## [1.11.1](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.11.0...v1.11.1) (2023-09-18)
+
+
+### Bug Fixes
+
+*  Add path and pathname ([3f4825e](https://github.com/CoCreate-app/CoCreate-css-parser/commit/3f4825e1898930ab6f643c30d51acdcc68b426fb))
+* Update CoCreate depndencies to latest versions ([b711c68](https://github.com/CoCreate-app/CoCreate-css-parser/commit/b711c684209737a7376eac2a6ae8d7ad2f1bac3a))
+
 # [1.11.0](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.10.1...v1.11.0) (2023-09-17)
 
 
