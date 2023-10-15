@@ -38,32 +38,39 @@ function init(linkTag) {
         document.head.appendChild(styleEl);
         styleElSheet = styleEl.sheet;
 
+        // TODO get from @cocreate/config
         if (parse == undefined)
             parse = localStorage.getItem('cssParser')
+        if (parse === 'false' || parse === false)
+            return
 
-        if (parse == 'true') {
-            parseLinkCSS();
-            linkTag.getValue = () => {
-                const onlyUnique = (value, index, self) => {
-                    return self.indexOf(value) === index;
-                };
+        parseLinkCSS();
 
-                const urlObject = new URL(linkTag.href);
-                const pathParts = urlObject.pathname.split("/");
+        linkTag.getValue = () => {
+            const onlyUnique = (value, index, self) => {
+                return self.indexOf(value) === index;
+            };
 
-                let data = {}
-                data.name = pathParts[pathParts.length - 1];
-                data.path = urlObject.pathname.replace(data.name, '');
-                data.pathname = urlObject.pathname;
-                data.src = parsedCSS.concat(linkCSS).filter(onlyUnique).join('\r\n');
-                data['content-type'] = 'text/css';
+            const urlObject = new URL(linkTag.href);
+            const pathParts = urlObject.pathname.split("/");
 
-                return data
-            }
+            let data = {}
+            data.name = pathParts[pathParts.length - 1];
+            data.path = urlObject.pathname.replace(data.name, '');
+            data.pathname = urlObject.pathname;
+            data.src = parsedCSS.concat(linkCSS).filter(onlyUnique).join('\r\n');
+            data['content-type'] = 'text/css';
+
+            return data
+        }
+
+        if (parse === 'true' || parse === true) {
+
             let elements = document.querySelectorAll("[class]");
             initElements(elements);
-            observerInit();
         }
+
+        observerInit();
 
     }
 }
