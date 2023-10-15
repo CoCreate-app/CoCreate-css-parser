@@ -39,7 +39,7 @@ function init(linkTag) {
         styleElSheet = styleEl.sheet;
 
         // TODO get from @cocreate/config
-        if (parse == undefined)
+        if (!parse && parse !== false)
             parse = localStorage.getItem('cssParser')
         if (parse === 'false' || parse === false)
             return
