@@ -1,3 +1,11 @@
+## [1.11.5](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.11.4...v1.11.5) (2023-10-16)
+
+
+### Bug Fixes
+
+* if parser not explicitly set to false observer will observe classes ([510343b](https://github.com/CoCreate-app/CoCreate-css-parser/commit/510343b3fd6d794aef71b39e4372eeed025e6bb1))
+* parse conditions ([8a9558b](https://github.com/CoCreate-app/CoCreate-css-parser/commit/8a9558b63cf47991f779cc3adcbea23cbb3c762e))
+
 ## [1.11.4](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.11.3...v1.11.4) (2023-10-14)
 
 
