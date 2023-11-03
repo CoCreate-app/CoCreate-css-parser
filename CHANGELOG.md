@@ -1,3 +1,11 @@
+## [1.11.7](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.11.6...v1.11.7) (2023-11-03)
+
+
+### Bug Fixes
+
+* favicon.ico path ([ef13533](https://github.com/CoCreate-app/CoCreate-css-parser/commit/ef1353378259ab4c63f000cad30271af9c81891a))
+* update dependencies to the lates versions ([c9e80e2](https://github.com/CoCreate-app/CoCreate-css-parser/commit/c9e80e26398daae9e699f57f68ad97731a77f730))
+
 ## [1.11.6](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.11.5...v1.11.6) (2023-10-25)
 
 
