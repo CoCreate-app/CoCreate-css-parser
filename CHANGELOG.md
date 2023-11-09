@@ -1,3 +1,10 @@
+## [1.11.8](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.11.7...v1.11.8) (2023-11-09)
+
+
+### Bug Fixes
+
+* meta name typo ([e6cdb81](https://github.com/CoCreate-app/CoCreate-css-parser/commit/e6cdb8174495e9a4085e4bf4c4e920b0ce1e03d7))
+
 ## [1.11.7](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.11.6...v1.11.7) (2023-11-03)
 
 

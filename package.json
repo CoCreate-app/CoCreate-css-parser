@@ -1,6 +1,6 @@
 {
   "name": "@cocreate/css-parser",
-  "version": "1.11.7",
+  "version": "1.11.8",
   "description": "A simple css-parser component in vanilla javascript. Easily configured using HTML5 data-attributes and/or JavaScript API.",
   "keywords": [
     "css-parser",
