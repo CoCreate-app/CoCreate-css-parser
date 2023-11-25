@@ -1,3 +1,15 @@
+# [1.13.0](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.12.0...v1.13.0) (2023-11-25)
+
+
+### Bug Fixes
+
+* update nav, edit button and css path ([1487af1](https://github.com/CoCreate-app/CoCreate-css-parser/commit/1487af11164027dc7dc2d1bf2d8c48af93703879))
+
+
+### Features
+
+* upgrade dependencies for latest features and fixes ([9c42dfb](https://github.com/CoCreate-app/CoCreate-css-parser/commit/9c42dfb477ec169f4167e9aa5e84b308e134b177))
+
 # [1.12.0](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.11.9...v1.12.0) (2023-11-19)
 
 
