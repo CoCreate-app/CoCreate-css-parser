@@ -275,14 +275,15 @@ function addNewRules() {
                 low = index + 1;
         }
 
-        if (low > styleElSheet.cssRules.length) low = styleElSheet.cssRules.length;
+        if (low > styleElSheet.cssRules.length)
+            low = styleElSheet.cssRules.length;
         try {
             styleElSheet.insertRule(rule, low);
+            parsedCSS.splice(low, 0, rule);
         }
         catch (err) {
             console.error(err);
         }
-        parsedCSS.splice(low, 0, rule);
     }
     if (tempStyleList.length > 0)
         if (linkTag.save)
