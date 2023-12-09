@@ -1,3 +1,10 @@
+## [1.14.1](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.14.0...v1.14.1) (2023-12-09)
+
+
+### Bug Fixes
+
+* oder of splice ([d03c2cf](https://github.com/CoCreate-app/CoCreate-css-parser/commit/d03c2cfd26c9f54c77ab8f1aba934df2cefcfdc2))
+
 # [1.14.0](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.13.0...v1.14.0) (2023-11-25)
 
 
