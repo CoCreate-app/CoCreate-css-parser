@@ -136,7 +136,8 @@ function createRule(className) {
     if (className.includes('!important')) {
         [className, important] = className.split("!");
         important = '!' + important;
-        importantSuffix = '\\' + important;
+        importantSuffix = parseValue(important);
+        important = '!important';
     }
     let res = className.split(":");
     let property = res[0];
