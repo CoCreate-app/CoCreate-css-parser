@@ -1,3 +1,10 @@
+## [1.14.2](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.14.1...v1.14.2) (2024-01-30)
+
+
+### Bug Fixes
+
+* Handling of !important when @ mediaQueries are defined ([b38e4d9](https://github.com/CoCreate-app/CoCreate-css-parser/commit/b38e4d9d6cb4d4651b4274a19b52a1464c9efd52))
+
 ## [1.14.1](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.14.0...v1.14.1) (2023-12-09)
 
 
