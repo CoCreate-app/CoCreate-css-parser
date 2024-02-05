@@ -1,3 +1,10 @@
+## [1.14.3](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.14.2...v1.14.3) (2024-02-05)
+
+
+### Bug Fixes
+
+* Removed https://cdn.cocreate.app/latest/CoCreate.min.css ([7d59765](https://github.com/CoCreate-app/CoCreate-css-parser/commit/7d597658028de62476729c65fa844d1795b598de))
+
 ## [1.14.2](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.14.1...v1.14.2) (2024-01-30)
 
 
