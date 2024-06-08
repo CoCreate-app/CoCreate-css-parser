@@ -230,8 +230,9 @@ function createThemeRule(className) {
         rule = `.${property}\\:${suffix}\\@${theme} { ${property}: ${value}; }`;
     }
     if (theme == 'dark' || theme == 'light') {
-        rule = `[theme="${theme}"] ${rule}`;
-        let reverseRule = `html:not([theme="${themes[1 - themes.indexOf(theme)]}"]) ${rule}`;
+        // rule = `[theme="${theme}"] ${rule}`;
+        // let reverseRule = `html:not([theme="${themes[1 - themes.indexOf(theme)]}"]) ${rule}`;
+        let reverseRule = `${rule}`;
         tempStyleList.push(rule);
         themeCSS[theme].push(reverseRule);
         classNameList.set(classname, true);
