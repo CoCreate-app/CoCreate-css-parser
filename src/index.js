@@ -208,40 +208,49 @@ function createThemeRule(className) {
         theme = theme[0];
         pseudo.shift();
     }
+    let important = "";
+    let importantSuffix = "";
+    if (className.includes('!important')) {
+        [className, important] = className.split("!");
+        important = '!' + important;
+        importantSuffix = parseValue(important);
+        important = '!important';
+    }
 
     let res = className.split(':');
-    if (res.length > 2) {
-        console.log('pseudo names need to be added after theme');
-        return;
-    }
+    // if (res.length > 2) {
+    //     console.log('pseudo names need to be added after theme');
+    //     return;
+    // }
     let property = res[0];
     let suffix = parseValue(res[1]);
     let value = res[1].replace(/_/g, " ");
 
+    //TODO: set theme rule with pseudo and !important
     let rule = "";
-    if (pseudo) {
-        suffix += "\\@" + theme;
-        for (let i = 0; i < pseudo.length; i++) {
-            suffix += ":" + pseudo[0 + i];
-        }
-        rule = `.${property}\\:${suffix} { ${property}: ${value}; }`;
-    }
-    else {
+    if (res.length > 2) {
+        // suffix += "\\@" + theme;
+        // for (let i = 0; i < res.length - 2; i++) {
+        suffix += "\\:" + res[2] + importantSuffix + ":" + "\\@" + theme + ":" + res[2];
+        // }
+        rule = `.${property}\\:${suffix} { ${property}: ${value}${important}; }`;
+    } else {
         rule = `.${property}\\:${suffix}\\@${theme} { ${property}: ${value}; }`;
     }
+
     if (theme == 'dark' || theme == 'light') {
         // rule = `[theme="${theme}"] ${rule}`;
         // let reverseRule = `html:not([theme="${themes[1 - themes.indexOf(theme)]}"]) ${rule}`;
-        let reverseRule = `${rule}`;
-        tempStyleList.push(rule);
-        themeCSS[theme].push(reverseRule);
+        // let reverseRule = `${rule}`;
+        // tempStyleList.push(rule);
+        themeCSS[theme].push(rule);
         classNameList.set(classname, true);
     }
 }
 
 function createThemeMedia() {
-    let initial;
     if (themeCSS.dark.length) {
+        let initial;
         initial = "@media (prefers-color-scheme: dark) {";
         for (let c of themeCSS.dark) {
             initial += c + "\n";
@@ -251,6 +260,7 @@ function createThemeMedia() {
         themeCSS.dark = [];
     }
     if (themeCSS.light.length) {
+        let initial;
         initial = "@media (prefers-color-scheme: light) {";
         for (let c of themeCSS.light) {
             initial += c + "\n";
