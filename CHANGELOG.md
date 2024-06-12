@@ -1,3 +1,13 @@
+## [1.14.5](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.14.4...v1.14.5) (2024-06-12)
+
+
+### Bug Fixes
+
+* bump cocreate dependencies ([ea1b6fc](https://github.com/CoCreate-app/CoCreate-css-parser/commit/ea1b6fca49f2dc55cceba26f4419efbfa76f4f79))
+* Handlig importan in theme rules ([7078105](https://github.com/CoCreate-app/CoCreate-css-parser/commit/70781057f761557080360535d9ba47ef7aee8e67))
+* handling dark and light mode ([5217148](https://github.com/CoCreate-app/CoCreate-css-parser/commit/52171481883c33d30650366ef70f3b19445266d2))
+* svg icon class ([3864815](https://github.com/CoCreate-app/CoCreate-css-parser/commit/3864815ef136a8b95c7a871fbd69bb37a05583d0))
+
 ## [1.14.4](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.14.3...v1.14.4) (2024-04-29)
 
 
