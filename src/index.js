@@ -308,7 +308,7 @@ const observerInit = () => {
     observer.init({
         name: "ccCss",
         observe: ['childList'],
-        target: '[class]',
+        selector: '[class]',
         callback: mutation => {
             if (parse != 'false')
                 initElements(mutation.addedNodes);
@@ -329,7 +329,7 @@ const observerInit = () => {
 observer.init({
     name: "cssParseAddedNode",
     observe: ['addedNodes'],
-    target: 'link[parse], link[save], link[object]',
+    selector: 'link[parse], link[save], link[object]',
     callback: mutation => {
         init(mutation.target);
     }
@@ -339,7 +339,7 @@ observer.init({
     name: "cssParseattributes",
     observe: ["attributes"],
     attributeName: ["parse", "save", "object"],
-    target: 'link',
+    selector: 'link',
     callback: mutation => {
         init(mutation.target);
     }
