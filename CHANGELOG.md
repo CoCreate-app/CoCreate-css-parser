@@ -1,3 +1,17 @@
+# [1.15.0](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.14.5...v1.15.0) (2024-11-04)
+
+
+### Bug Fixes
+
+* observer taget has been renamed to selector ([7ae87bb](https://github.com/CoCreate-app/CoCreate-css-parser/commit/7ae87bbdb2397055f7f74fe698c6e2290f54f6b7))
+* pretier.config.js and file formating ([5e18a18](https://github.com/CoCreate-app/CoCreate-css-parser/commit/5e18a18ef0b11accc68d810e89c0119f13f01216))
+
+
+### Features
+
+* add prettier.config.js and format files ([160d5f8](https://github.com/CoCreate-app/CoCreate-css-parser/commit/160d5f85171a3c96fc3225d1b4558692e67afd7b))
+* add prettier.config.js and format files ([d94b026](https://github.com/CoCreate-app/CoCreate-css-parser/commit/d94b0267e7560bb7d7e212ddb4a732f67fa5a6ad))
+
 ## [1.14.5](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.14.4...v1.14.5) (2024-06-12)
 
 
