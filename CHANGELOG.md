@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.15.0...v1.16.0) (2025-01-18)
+
+
+### Features
+
+* debounce save ([548ead8](https://github.com/CoCreate-app/CoCreate-css-parser/commit/548ead85bcae6b6f308757ed5ec776a92e8e3b2e))
+
 # [1.15.0](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.14.5...v1.15.0) (2024-11-04)
 
 
