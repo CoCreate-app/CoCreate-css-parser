@@ -324,17 +324,17 @@ function addNewRules() {
 const observerInit = () => {
 	observer.init({
 		name: "ccCss",
-		observe: ["childList"],
+		types: ["addedNodes"],
 		selector: "[class]",
 		callback: (mutation) => {
-			if (parse != "false") initElements(mutation.addedNodes);
+			if (parse != "false") initElements([mutation.target]);
 		}
 	});
 
 	observer.init({
 		name: "ccCss",
-		observe: ["attributes"],
-		attributeName: ["class", "className"],
+		types: ["attributes"],
+		attributeFilter: ["class", "className"],
 		callback: (mutation) => {
 			if (parse != "false") initElements([mutation.target]);
 		}
@@ -343,20 +343,20 @@ const observerInit = () => {
 
 observer.init({
 	name: "cssParseAddedNode",
-	observe: ["addedNodes"],
+	types: ["addedNodes"],
 	selector: "link[parse], link[save], link[object]",
 	callback: (mutation) => {
-		init(mutation.target);
+		init([mutation.target]);
 	}
 });
 
 observer.init({
 	name: "cssParseattributes",
-	observe: ["attributes"],
-	attributeName: ["parse", "save", "object"],
+	types: ["attributes"],
+	attributeFilter: ["parse", "save", "object"],
 	selector: "link",
 	callback: (mutation) => {
-		init(mutation.target);
+		init([mutation.target]);
 	}
 });
 
