@@ -1,3 +1,10 @@
+## [1.16.1](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.16.0...v1.16.1) (2025-04-11)
+
+
+### Bug Fixes
+
+* update observer obseve parame to type and and attribute name to attributeFilter ([90fe9a4](https://github.com/CoCreate-app/CoCreate-css-parser/commit/90fe9a46542054abec5d4798f7699e9762b0cca6))
+
 # [1.16.0](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.15.0...v1.16.0) (2025-01-18)
 
 
