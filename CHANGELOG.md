@@ -1,3 +1,13 @@
+## [1.16.2](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.16.1...v1.16.2) (2025-04-30)
+
+
+### Bug Fixes
+
+* added css-loader ([4dc5823](https://github.com/CoCreate-app/CoCreate-css-parser/commit/4dc582334ab5c8ba48e96871fdadc9c94c04897a))
+* update query attributes ([a831817](https://github.com/CoCreate-app/CoCreate-css-parser/commit/a831817b332e792a5c8a5d842d4966befd35ae2f))
+* updated cocreate modules versions ([67356f2](https://github.com/CoCreate-app/CoCreate-css-parser/commit/67356f27997750f8c948f16be5c515e299fc5ed5))
+* webpack.config and devdependencies ([9595a6b](https://github.com/CoCreate-app/CoCreate-css-parser/commit/9595a6b92ed9381570f6775548f4927c4a991f7f))
+
 ## [1.16.1](https://github.com/CoCreate-app/CoCreate-css-parser/compare/v1.16.0...v1.16.1) (2025-04-11)
 
 
